@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía</title>
+    <link rel="stylesheet" href="css/gastronomia.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Oooh+Baby&family=Rochester&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/40714ecdc7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <dl>
+                <dt><a href="home.html" class="logo" target="_self">Hotel & Spa</a></dt>
+                <dt><a href="home.html" class="enlace" target="_self">HOME</a></dt>
+                <dt><a href="alojamiento1.html" class="enlace" target="_self">HOSPEDAJE</a></dt>
+                <dt><a href="spa.html" class="enlace" target="_self">SPA</a></dt>
+                <dt><a href="gastronomia.html" class="enlace" target="_self">GASTRONOMÍA</a></dt>
+            </dl>
+            
+        </nav>
+    </header>
+
+        <div>
+        </div>
+        <h2>Agrega a tu reserva nuestras opciones gastronómicas</h2>
+
+    <article>
+    
+        <section class="articulos" style="--i:url(Cafe.jpg)">
+            <div class="content">
+                <p class="Incluye">Café Arábigo</p>
+                <h2 class="TituloDeArticulo">Degustación de Café</h2> <br>
+                <p class="Incluye">Café Libérica</p>
+                <p class="Incluye">Café Excelsa</p>
+                <p class="Incluye">Café Robusta</p>
+                <p class="Incluye">Café Especial </p>
+            </div>
+        </section>
+
+
+        <section class="articulos" style="--i:url(Brunch.jpg)">
+            <div class="content">
+                <h2 class="TituloDeArticulo">Brunch para 2 personas</h2> <br>
+                <p class="Incluye">2 Infusiones</p>
+                <p class="Incluye">1 Tostado de J&Q</p>
+                <p class="Incluye">2 Copas de Jugo Naranja</p>
+                <p class="Incluye">1 Porción de Torta a elección</p>
+                <p class="Incluye">2 Shots de Yogurt con Frutas</p>
+            
+            </div>
+        </section>
+
+
+        <section class="articulos" style="--i:url(FingerFood.jpg)">
+            <div class="content">
+                <h2 class="TituloDeArticulo">Finger Food</h2> <br>
+                <p class="Incluye">Mozzarella Sticks</p>
+                <p class="Incluye">Mini Sushi Burgers</p>
+                <p class="Incluye">Bruschettas Caprese</p>
+                <p class="Incluye">Chips de Salmón ahumado</p>
+                <p class="Incluye">Souffle de Chocolate</p>
+                
+            </div>
+        </section>
+
+
+        <section class="articulos" style="--i:url(CenaRomantica.jpg)">
+            <div class="content">
+                <h2 class="TituloDeArticulo">Cena Romántica</h2> <br>
+                <p class="Incluye">Ribs de Cerdo BBQ</p>
+                <p class="Incluye">Botella de Champagne</p>
+                <p class="Incluye">Bruschettas de Salmón y palta</p>
+                <p class="Incluye">Sorrentinos de Hongos de Pino</p>
+                <p class="Incluye">Macarons de Frambuesa</p>
+            </div>
+        </section>
+
+
+    </article>
+
+    <Footer class="FinDeLaPagina">
+
+
+
+        <div>
+            <h3 class="LogoFooter">Hotel & Spa</h3>
+        </div>
+
+
+
+        <div>
+            <h4 class="RedesYContacto">REDES SOCIALES</h4>
+            <div> <br>
+                <a href="https://www.facebook.com/" class="iconos" target="_blank"><i
+                        class="fa-brands fa-2x fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="iconos" target="_blank"><i
+                        class="fa-brands fa-2x fa-square-instagram"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="RedesYContacto">CONTÁCTANOS</h4>
+            <div> <br>
+
+                <div>
+                    <a href="#" class="Contacto"><i class="fa-brands fa-lg fa-whatsapp"></i> 011-15123456</a>
+                </div> <br>
+
+                <div>
+                    <a href="#" class="Contacto"><i class="fa-regular fa-lg fa-envelope"></i> HotelSpa@gmail.com</a>
+                </div><br>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="mapa">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11057.186229770894!2d-58.47541501914094!3d-34.520091024064676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1521fabebdb%3A0x16e358b2d9237238!2sGral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20450%2C%20B1638BOC%20Vicente%20L%C3%B3pez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1665809993631!5m2!1ses!2sar"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+<div class="temperaturaAPI">
+    <i class="fa-solid fa-2x fa-temperature-high " ></i>
+    <h3 id="temperaturaBsAs"></h3>
+
+</div>
+
+    </Footer>
+
+
+    <script src="./js/validacionFormulario.js"></script>
+    <script src="./js/api.js"></script>
+
+
+</body>
+</html>

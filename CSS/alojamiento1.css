@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+}
+
+/* Configuraciones para el Header */
+
+header{
+    background-color: rgba(23, 64, 33, 0.4);
+    
+}
+
+.logo{
+    color: rgb(250, 237, 217);
+    text-shadow: 2px 2px 2px #000;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Inter Tight', sans-serif;
+    
+    
+}
+
+.logo:hover{
+    color: rgb(137, 194, 190);
+}
+
+dl {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family: 'Inter Tight', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+}
+
+.enlace{
+    text-decoration: none;
+    color:rgb(250, 237, 217);
+    text-shadow: 2px 2px 2px #000;
+    font-size: 20px;
+    
+   
+    
+}
+
+.enlace:hover{
+    color: rgb(137, 194, 190);
+}
+
+.TituloDePromociones {
+    text-align: center;
+    color: rgb(137, 194, 190);
+    font-family: 'Rochester', cursive;
+    font-size: 30px;
+}
+
+/* Configuraciones para el slider de fotos */
+
+.slider-frame{
+    width: 98.5vw;
+    height: auto;
+    margin: 20px auto 0;
+    overflow: hidden;
+    background-size: cover;
+    }
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.slider-frame img{
+width: 80%;
+}
+
+@keyframes slide {
+    0%{ margin-left: 0%;}
+    20%{ margin-left: 0%;}
+     
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+    
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+    
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+}
+
+/* Estilos para los articulos */
+
+article{
+    display: flex;
+    justify-content: center;
+}
+
+
+.articulos{
+    display: inline-block;
+    margin: 20px;
+    min-width: 292px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3,32, 51, .8);
+}
+
+.content{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .8s;
+}
+
+.content h2, a{
+    color: rgba(255, 255, 255, .8)
+
+}
+
+.articulos:hover .content{
+    opacity: 1;
+}
+
+.TituloDeArticulo{
+    font-family: 'Oooh Baby', cursive;
+    font-size: 30px;
+}
+
+.Incluye{
+    color: rgb(255, 255, 255);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 15px;
+}
+
+
+
+.FinDeLaPagina{
+    background-color: rgba(23, 64, 33, 0.6);
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.RedesYContacto{
+    
+    font-family: 'Inter Tight', sans-serif;
+    color: rgb(250, 237, 217);
+    text-shadow: 2px 2px 2px #000;
+    font-size: 15px;
+    
+   
+}
+
+
+.iconos{
+    display: inline;
+    margin: 1px;
+    justify-content: end;
+    box-shadow: 3px 5px 5px rgba(3,32, 51, .8);}
+    
+
+.iconos:hover{
+    color: rgb(4, 75, 42);}
+
+.LogoFooter{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 23px;
+    color: rgb(250, 237, 217);
+    text-shadow: 2px 2px 2px #000;
+    
+    
+}
+
+.mapa{
+    display:inline;
+    box-shadow: 3px 5px 5px rgba(3,32, 51, .8);
+    
+    
+}
+
+.Contacto{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    
+}
+
+.Contacto:hover{
+    color: rgb(4, 75, 42);
+}
+
+.habitaciones{
+    background: url(beautiful-luxury-hotel-bedroom.jpg);
+    padding: 70px;
+    margin: 50px;
+    height: 70vh;
+    background-size: cover;
+    
+}
+
+.tituloHabitaciones{
+    color: rgb(137, 194, 190);
+    text-shadow: 2px 2px 2px #000;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.opcionesHabitaciones{
+    
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    color: rgb(250, 237, 217);
+    text-shadow: 1px 1px 1px #000;
+    list-style: none
+}
+
+
+.temperaturaAPI{
+    font-size: 17px;
+    font-family: 'Inter Tight', sans-serif;
+    color: rgb(250, 237, 217);
+    padding: 20px;
+    text-shadow: 1px 1px 1px #000;
+    display: flex;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 10vw;
+    margin-top: 10%;
+    margin-left: 40%;
+    padding: 10px 40px;
+    border: 2px solid #716763;
+    color: rgb(255, 253, 253);
+    text-decoration: none;
+    background: rgb(137, 194, 190);
+}
+
+.btn:hover{
+        color: rgb(4, 75, 42);}
+
+
+
+
+@media (max-width:860px){
+
+    
+    .divisionFormulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formularioEntero{
+       display: flex;
+       justify-content: center;
+    }
+
+    .tuConsulta{
+      margin: 10px;     
+    }
+    
+    .column{
+        display: flex;
+        width: auto;
+        
+    }
+    .row {
+    flex-direction: column;
+    justify-content: center;
+    }
+}

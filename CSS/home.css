@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Configuraciones para el Header */
+
+header{
+    background-color: rgba(23, 64, 33, 0.4);
+}
+
+.logo{
+    color: rgb(250, 237, 217);
+    text-shadow: 2px 2px 2px #000;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Inter Tight', sans-serif;
+    
+    
+}
+
+.logo:hover{
+    color: rgb(137, 194, 190);
+}
+
+dl {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-family: 'Inter Tight', sans-serif;
+    padding-top: 25px;
+    
+}
+
+.enlace{
+    text-decoration: none;
+    color:rgb(250, 237, 217);
+    text-shadow: 2px 2px 2px #000;
+    font-size: 20px;
+    
+   
+    
+}
+
+.enlace:hover{
+    color: rgb(137, 194, 190);
+}
+
+/* Configuraciones para el slider de fotos */
+
+.slider-frame{
+    width: 98.5vw;
+    height: auto;
+    margin: 20px auto 0;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+width: 100%;
+}
+
+@keyframes slide {
+    0%{ margin-left: 0%;}
+    20%{ margin-left: 0%;}
+     
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+    
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+    
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+}
+
+/* Estilos para los articulos */
+
+article{
+    display: flex;
+    justify-content: center;
+}
+
+.articulos{
+    display: inline-block;
+    align-items: center;
+    margin: 20px;
+    margin-left: 10px;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(3,32, 51, .8);
+    
+}
+
+
+
+.content{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    transition: .8s;
+}
+
+.content h2, a{
+    color: rgba(255, 255, 255, .8)
+    
+
+}
+
+.articulos:hover .content{
+    opacity: 1;
+}
+
+.TituloDeArticulo{
+    font-family: 'Oooh Baby', cursive;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+
+/* Estilos del formulario */
+
+.divisionFormulario{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(23, 64, 33, 0.4);
+    padding: 1.8em;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 1.2em;
+}
+
+.columnasFormulario{
+    width: 60vw;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+    padding: 10px;
+   
+}
+form h2{
+    text-align: center;
+    font-family: 'Inter Tight', sans-serif;
+    
+    
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    padding: 1em;
+    background-color: rgba(255,255 ,255, 0.3);
+    width: 100vw;
+    
+}
+
+.datos{
+    margin: 2px;
+    
+}
+
+.datos label{
+    display: block;
+    font-family: 'Inter Tight', sans-serif;
+
+}
+
+
+.datos select, .datos input{
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    text-align: center;
+    
+    
+    
+}
+
+.datos input{
+    border: none;
+    background: none;
+    outline: 0;
+    color: rgb(71, 107, 107);
+    border-bottom: 1px solid  rgb(255, 255, 255);
+}
+
+.tuConsulta{
+    padding-top: 100px;
+}
+.consulta{
+    padding-right: 50px;
+    text-align: justify;
+    display: flex;
+    font-size: 25px;
+    
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.agregar{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.botones{
+    box-shadow: 2px 2px 2px #000;
+    color: white;
+    text-shadow: 1px 2px 2px #000;
+    text-align: center;
+    font-size: 15px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(135, 189, 168);
+}
+
+.botones:hover{
+    background-color: rgb(77, 177, 139);
+}
+
+.extras{
+    font-family: 'Rochester', cursive;
+    font-size: 25px;
+    
+}
+
+
+
+.FinDeLaPagina{
+    background-color: rgba(23, 64, 33, 0.6);
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.RedesYContacto{
+    
+    font-family: 'Inter Tight', sans-serif;
+    color: rgb(250, 237, 217);
+    text-shadow: 2px 2px 2px #000;
+    font-size: 15px;
+    
+   
+}
+
+
+.iconos{
+    display: inline;
+    margin: 1px;
+    justify-content: end;
+    box-shadow: 3px 5px 5px rgba(3,32, 51, .8);}
+    
+
+.iconos:hover{
+    color: rgb(4, 75, 42);}
+
+.LogoFooter{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 23px;
+    color: rgb(250, 237, 217);
+    text-shadow: 2px 2px 2px #000;
+    
+    
+}
+
+.mapa{
+    display:inline;
+    box-shadow: 3px 5px 5px rgba(3,32, 51, .8);
+    
+    
+}
+
+.Contacto{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000;
+    
+}
+
+.Contacto:hover{
+    color: rgb(4, 75, 42);
+}
+
+.temperaturaAPI{
+    font-size: 12px;
+    font-family: 'Inter Tight', sans-serif;
+    color: rgb(250, 237, 217);
+    padding: 20px;
+    text-shadow: 1px 1px 1px #000;
+    display: flex;
+    
+}
+
+
+@media (max-width:860px){
+
+
+    .articulos{
+        margin-left: 10px;
+    }
+
+    .divisionFormulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formularioEntero{
+       display: flex;
+       justify-content: center;
+    }
+
+    .tuConsulta{
+      margin: 10px;     
+    }
+    
+    .column{
+        display: flex;
+        width: auto;
+        
+    }
+    .row {
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    h3{
+        padding: 30px;
+    }
+
+    .LogoFooter{
+        padding-right: 30px;
+        padding-top: 0px;
+        
+    }
+
+    .RedesYContacto{
+        padding-right: 30px;
+    }
+}
+
+@media(max-width:620px){
+
+    h3{
+        padding: 30px;
+    }
+
+    .FinDeLaPagina{
+        display: block;
+        width: auto;}
+    
+
+    .LogoFooter{
+            padding-bottom: 20px;
+           }
+
+           .RedesYContacto{
+            margin-top: 10px;
+            
+        }
+       
+}
+
+@media (max-width:420px){
+
+    
+    
+    dl{
+        display: block;
+        margin-left: 20px;
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    .articulos{
+       
+        width: 90%;
+        margin: 15px;
+        min-width: 80px;
+
+    }
+
+    .columnasFormulario{
+       width: 100%;
+    }
+
+    h3{
+        padding: 30px;
+    }
+    
+   .FinDeLaPagina{
+    display: block;
+    width: auto;
+    min-width: 200px;
+   }
+
+   .LogoFooter{
+    padding-bottom: 20px;
+   }
+   .RedesYContacto{
+    margin-top: 10px;
+   }
+
+}
+
+
+

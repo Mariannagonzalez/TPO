@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Spa</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Oooh+Baby&family=Rochester&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/40714ecdc7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <dl>
+                <dt><a href="home.html" class="logo" target="_self">Hotel & Spa</a></dt>
+                <dt><a href="home.html" class="enlace" target="_self">HOME</a></dt>
+                <dt><a href="alojamiento1.html" class="enlace" target="_self">HOSPEDAJE</a></dt>
+                <dt><a href="spa.html" class="enlace" target="_self">SPA</a></dt>
+                <dt><a href="gastronomia.html" class="enlace" target="_self">GASTRONOMÍA</a></dt>
+            </dl>
+            
+        </nav>
+
+        <div class="slider-frame">
+            <ul>
+                <li><img src="img/Slider1.jpg" alt=""></li>
+                <li><img src="img/Slider2.jpg" alt=""></li>
+                <li><img src="img/Slider3.jpg" alt=""></li>
+                <li><img src="img/Slider4.jpg" alt=""></li>
+            </ul>
+        </div>
+    </header>
+
+    <article>
+        <section class="articulos" style="--i:url(SeccionHospedaje.jpg)">
+            <div class="content">
+                <h2 class="TituloDeArticulo"><a href="alojamiento1.html" target="_self">Hospedaje</a></h2> <br>
+            </div>
+        </section>
+
+        <section class="articulos" style="--i:url(SeccionSpa.jpg)">
+            <div class="content">
+                <h2 class="TituloDeArticulo"><a href="spa.html" target="_self">Spa</a></h2> <br>
+            </div>
+        </section>
+
+        <section class="articulos" style="--i:url(SeccionGastronomia.jpg)">
+            <div class="content">
+                <h2 class="TituloDeArticulo"><a href="gastronomia.html" target="_self">Gastronomía</a></h2> <br>
+            </div>
+        </section>
+    </article>
+
+    <div class="divisionFormulario">
+        <div class="tuConsulta">
+            <p class="consulta">
+                
+                Hacé tu reserva a través del formulario </p><br>
+                
+                <p class="consulta">
+                        ¡También podés enviarnos tu consulta por WhatsApp, te responderemos lo antes posible!</p> <br>
+        
+            <h3>
+                011-15123456
+            </h3>
+        
+         </div>
+
+        <div class="formularioEntero">
+            <form class="columnasFormulario" name="formulario" id="formulario" action="" method="get">
+                <h2>Hacé tu reserva </h2> <br>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="datos">
+                            <label for="Nombre">NOMBRE Y APELLIDO</label><br>
+                            <input class="datos" size="30" type="text" name="Nombre" id="Nombre"
+                                placeholder="Ingrese su nombre y apellido aquí...">
+                        </div>
+                        <br>
+                        <div class="datos">
+                            <label for="Telefono">TELÉFONO</label> <br>
+                            <input class="datos" size="12" type="number" name="Telefono" id="Telefono" maxlength="12"
+                                placeholder="Ingrese su número aquí..."> <br>
+                        </div>
+
+                        <div class="datos">
+                            <label for="Email">EMAIL</label><br>
+                            <input class="datos" size="30" type="text" name="Email" id="Email"
+                                placeholder="Ingrese su email aquí..."> <br>
+                        </div>
+
+                        <div class="datos">
+                            <label for="Desde">Desde</label>
+                            <input size="15" type="date" name="Desde" id="Desde"><br>
+                            <label for="Hasta">Hasta</label>
+                            <input size="15" type="date" name="Hasta" id="Hasta">
+                        </div>
+
+                        <br>
+
+                        <div class="datos">
+                            <p>Cantidad de personas:</p>
+                            <select name="Cantidad de personas" id="Cantidad">
+                                <option value="">-</option>
+                                <option value="1">1 Persona</option>
+                                <option value="2">2 Personas</option>
+                                <option value="3">3 Personas</option>
+                                <option value="4">4 Personas</option>
+                                <option value="5">Más de 4 Personas</option>
+                            </select>
+                        </div>
+
+                        <br>
+                    </div>
+
+
+
+                    <div class="column">
+                        <fieldset class="agregar" name="Reserva" id="Reserva">
+
+                            <p class="extras">Agrega a tu reserva nuestras opciones Gastronomícas:</p> <br>
+                            <input type="checkbox">
+                            <label for="Checkbox">Degustación de café</label> <br>
+                            <input type="checkbox">
+                            <label for="Checkbox">Brunch para 2 personas</label> <br>
+                            <input type="checkbox">
+                            <label for="Checkbox">Finger Food</label> <br>
+                            <input type="checkbox">
+                            <label for="Checkbox">Cena Romántica</label> <br>
+
+                        </fieldset>
+
+                        <fieldset class="agregar" name="Opcion" id="Opcion">
+                            <p class="extras">Agrega a tu reserva nuestras opciones de Spa:</p> <br>
+                            <input type="checkbox">
+                            <label for="Checkbox" value="Opcion 1">Sauna seco</label> <br>
+                            <input type="checkbox">
+                            <label for="Checkbox" value="Opcion 2">Sauna húmedo</label> <br>
+                            <input type="checkbox">
+                            <label for="Checkbox" value="Opcion 3">Ducha escocesa</label> <br>
+                            <input type="checkbox">
+                            <label for="Checkbox" value="Opcion 4">Gimnasio</label>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <input class="botones" id="b1" type="submit" value="Hacer Reserva">
+                    <input class="botones" type="reset" value="Borrar datos"><br>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <Footer class="FinDeLaPagina">
+
+
+
+        <div>
+            <h3 class="LogoFooter">Hotel & Spa</h3>
+        </div>
+
+
+
+        <div>
+            <h4 class="RedesYContacto">REDES SOCIALES</h4>
+            <div> <br>
+                <a href="https://www.facebook.com/" class="iconos" target="_blank"><i
+                        class="fa-brands fa-2x fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="iconos" target="_blank"><i
+                        class="fa-brands fa-2x fa-square-instagram"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <h4 class="RedesYContacto">CONTÁCTANOS</h4>
+            <div> <br>
+
+                <div>
+                    <a href="#" class="Contacto"><i class="fa-brands fa-lg fa-whatsapp"></i> 011-15123456</a>
+                </div> <br>
+
+                <div>
+                    <a href="#" class="Contacto"><i class="fa-regular fa-lg fa-envelope"></i> HotelSpa@gmail.com</a>
+                </div><br>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="mapa">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11057.186229770894!2d-58.47541501914094!3d-34.520091024064676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1521fabebdb%3A0x16e358b2d9237238!2sGral.%20Jos%C3%A9%20de%20San%20Mart%C3%ADn%20450%2C%20B1638BOC%20Vicente%20L%C3%B3pez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1665809993631!5m2!1ses!2sar"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+<div class="temperaturaAPI">
+    <i class="fa-solid fa-3x fa-temperature-high " ></i>
+    <h2 id="temperaturaBsAs" ></h2>
+
+</div>
+
+    </Footer>
+
+
+    <script src="./js/validacionFormulario.js"></script>
+    <script src="./js/api.js"></script>
+
+</body>
+
+</html>
